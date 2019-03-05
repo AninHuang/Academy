@@ -1,0 +1,87 @@
+.collapse-list {
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.collapse-open {
+    display: none;
+}
+
+.collapse-panel {
+    visibility: hidden;
+    max-height: 0;
+    opacity: 0;
+    transition: max-height .1s, visibility .3s, opacity .3s;
+}
+
+.collapse-open:checked ~ .collapse-panel {
+    max-height: 500%;
+    opacity: 100;
+    visibility: visible
+}
+
+.collapse-list li {
+    margin-bottom: 0;
+}
+
+.collapse-list .collapse-btn {
+    width: 90%;
+    cursor: pointer;
+    display: inline-block;
+    margin-bottom: 0;
+    color: #d04a02;
+    font-weight: 500;
+    transition: background-color .2s ease;
+}
+
+.collapse-open ~ .optionsDiv .fontawesome-arrow:before {
+    font-family: FontAwesome;
+    content: "\f107";
+    float: right;
+    color: #d04a02;
+    font-size: 1.75rem;
+}
+
+.collapse-open:checked ~ .optionsDiv .fontawesome-arrow:before {
+    font-family: FontAwesome;
+    content: "\f106";
+    color: #d04a02;
+}
+
+.collapse-list .collapse-inner,
+.collapse-list .collapse-inner ul {
+    padding: 12px;
+}
+
+.collapse-list .collapse-inner li {
+    display: inline-block;
+    width: 275px;
+}
+
+.optionsDiv {
+    position: relative;
+    padding: 10px 0;
+}
+
+.optionsTitle {
+    border-top: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc;
+    margin-bottom: -1px;
+    padding: 20px 0;
+}
+
+.fontawesome-arrow {
+    position: absolute;
+    top: 20px;
+    right: 10px;
+}
+
+label.fontawesome-arrow:hover {
+    cursor: pointer;
+}
+
+.pwc-forms .pwc-forms__footer {
+    text-align: center !important;
+}

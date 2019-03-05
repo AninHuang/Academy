@@ -1,0 +1,530 @@
+body {
+    font-family: Arial, "Microsoft JhengHei", Sans-Serif;
+}
+
+#menuBarWrapper {
+    z-index: 1000;
+    width: 100%;
+    background: #fff;
+    border-bottom: 3px solid rgba(0, 0, 0, 0.1);
+    box-shadow: none;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding;
+    background-clip: padding-box
+}
+
+#mobileLangSect {
+    height: 32px;
+    background: #fff;
+    border-bottom: 3px solid rgba(0, 0, 0, 0.1);
+    padding-left: 12px;
+}
+
+@media(max-width:576px) {
+    #menuBarWrapper {
+        border-bottom: 1px solid #f3f3f3;
+    }
+}
+
+.title-header__text-strip {
+    width: 100%;
+}
+
+@media(min-width:992px) {
+    .sign-up-content .row {
+        flex-wrap: nowrap;
+    }
+}
+
+#menuBar {
+    width: 100%;
+    background: #fff;
+    height: 86px;
+}
+
+.slim-header__flex-wrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+    justify-content: space-between
+}
+
+#topBarLeft {
+    height: 80px;
+    background: #fff;
+}
+
+#logoWrapper {
+    position: relative;
+    top: 46px;
+}
+
+#logoWrapper .slim-header__territory-name {
+    margin-left: 15px;
+    color: #000;
+}
+
+#menuBar a {
+    text-decoration: none;
+    font-size: 16px;
+}
+
+#menuBar button.navbar-toggle {
+    background-color: transparent;
+    position: relative;
+    height: 85px;
+    padding-left: 18px;
+    padding-right: 18px;
+    margin: 0;
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -moz-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    align-items: center;
+    width: auto;
+}
+
+#logo {
+    text-indent: -9999em;
+    display: inline-block;
+    width: 69px;
+    height: 52px;
+    position: relative;
+    top: -30px;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-image: url("https://www.pwc.tw/content/pwc/script/network/parallax/PwC-logo.svg");
+}
+
+ul#lang {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    line-height: 116px;
+}
+
+#lang li {
+    display: inline;
+}
+
+#lang li a {
+    padding: 0 3px;
+    color: #000;
+}
+
+.title-header__text-strip {
+    background: #e0301e;
+    padding: 30px 0;
+    max-height: 110px;
+}
+
+.title-header__main-heading {
+    color: #fff;
+    font-weight: bold;
+    margin: 0;
+}
+
+@media(max-width:767px) {
+    .title-header__main-heading {
+        font-size: 1.5rem;
+    }
+
+    .title-header__text-strip {
+        padding: 20px 0
+    }
+
+    #menuBar {
+        height: 63px
+    }
+
+    #topBarLeft {
+        height: 33px;
+    }
+
+    #logoWrapper {
+        top: 25px
+    }
+
+    #logoWrapper a,
+    #logoWrapper a:hover {
+        font-size: 14px
+    }
+
+    #logo {
+        width: 50px;
+        height: 40px;
+        background-size: 100% 100%;
+        top: -18px
+    }
+
+    ul#lang {
+        line-height: 10px;
+    }
+
+    #lang li a {
+        font-size: 14px;
+        text-decoration: none;
+    }
+}
+
+@media(max-width:576px) {
+    ul#lang {
+        line-height: 32px;
+    }
+}
+
+.pwc-forms {
+    font-family: Arial, "Microsoft JhengHei", Sans-Serif !important;
+}
+
+.pwc-forms {
+    padding: 40px 15px;
+    line-height: 1rem;
+    min-width: 320px;
+    max-width: 550px;
+    width: 100%;
+}
+
+.pwc-forms .form-heading.form-heading--alternate {
+    margin-bottom: 30px
+}
+
+.pwc-forms .form-heading {
+    color: #d04a02;
+    border-top: 2px solid #d04a02;
+    padding-top: 10px;
+}
+
+.pwc-forms .pwc-forms__intro {
+    margin-bottom: 40px
+}
+
+.iframe {
+    margin: 25px 15px;
+}
+
+iframe {
+    width: 595px;
+    max-width: 100%;
+    overflow: auto;
+    padding: 5px 10px;
+}
+
+.pwc-forms .form-group .context-block p {
+    font-size: .85rem;
+    line-height: 1.2rem;
+}
+
+.pwc-forms .form-group .context-renewal-cancellation p {
+    font-size: 1rem !important;
+}
+
+.pwc-forms .pwc-forms__footer {
+    padding: 10px 0 20px
+}
+
+.pwc-forms label {
+    display: block !important;
+}
+
+.pwc-forms .pwc-forms__footer .pwc-forms__btn {
+    margin-right: 20px;
+    margin-bottom: 10px;
+    white-space: normal !important;
+}
+
+button,
+html input[type="button"],
+input[type="submit"] {
+    -webkit-appearance: button;
+    cursor: pointer
+}
+
+.pwc-forms .form-group .context-block a {
+    border-bottom: 1px solid #404041;
+    color: #404041;
+    font-size: inherit;
+    text-decoration: none
+}
+
+.pwc-forms .form-group .context-block a:hover {
+    border-bottom: 2px solid #d04a02;
+    color: #404041
+}
+
+.btn--primary {
+    background: #d04a02
+}
+
+.btn--primary:focus,
+.btn--primary:hover {
+    background: #b13f02
+}
+
+.btn--primary:active {
+    background: #a63b02
+}
+
+.btn--primary,
+.btn--primary:focus .btn--primary:hover,
+.btn--primary:active {
+    border-radius: 0;
+    border: 1px solid transparent;
+    color: #fff
+}
+
+.btn,
+.btn:link,
+.btn:hover,
+.btn:focus {
+    display: inline-block;
+    padding: 14px 23px;
+    font-size: 0.875rem;
+    line-height: 1.14em;
+    font-weight: bold;
+    text-decoration: none;
+    -webkit-transition: background .2s ease-out;
+    -moz-transition: background .2s ease-out;
+}
+
+.pwc-forms .form-group .required::after {
+    content: "";
+    color: #6d6e71;
+    font-size: 0.9rem;
+}
+
+.btn__subscr {
+    font-family: Georgia, 'Noto Sans TC', 'Microsoft JhengHei', Meiryo, "MS PGothic", Arial, sans-serif !important;
+    background: #fff;
+    border: 1px solid #d04a02;
+    color: #d04a02;
+    font-size: 0.875rem;
+    border-radius: 0;
+    padding: 10px 13px;
+    margin: 5px 5px 0 0;
+    line-height: 1.12em !important;
+}
+
+.btn__subscr:focus,
+.btn__subscr:hover,
+.btn__subscr:active {
+    background: #d04a02;
+    color: #fff;
+    padding: 10px 13px;
+    -webkit-appearance: none;
+    outline: 0;
+}
+
+#notification_rightcol {
+    margin-top: 25px;
+}
+
+.notification_option,
+.subscr_button {
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.notification_option {
+    margin: 0 10px 12px 0;
+}
+
+#join_rightcol {
+    background: #f3f3f3;
+    padding: 10px;
+    height: auto;
+}
+
+#join_rightcol p {
+    margin: 5px 0;
+}
+
+/* checkbox style */
+.optionsDiv .cb__container {
+    display: block;
+    margin-right: 10px;
+    position: relative;
+    padding-left: 25px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.optionsDiv .cb__container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.optionsDiv .cb__container .cb__checkmark {
+    position: absolute;
+    top: -3px;
+    left: 0;
+    height: 22px;
+    width: 22px;
+    border: 1px solid #ced4da;
+}
+
+.optionsDiv .cb__container input:checked~.cb__checkmark {
+    color: #2196F3;
+}
+
+.cb__checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.optionsDiv .cb__container input:checked~.cb__checkmark:after {
+    display: block;
+}
+
+.optionsDiv .cb__container .cb__checkmark:after {
+    left: 6px;
+    top: 1px;
+    width: 8px;
+    height: 14px;
+    border: solid #dc6900;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.optionsDiv div {
+    display: inline-block;
+}
+
+.optionsDiv div p {
+    margin-right: 5px;
+}
+
+.optionsDiv:parent {
+    margin-right: 26px;
+}
+
+#FieldName:has(> .optionsDiv) {
+    margin-right: 26px;
+}
+
+/* radio button style */
+.optionsDiv .cb__container .cb__radio {
+    position: absolute;
+    top: -3px;
+    left: 0;
+    height: 22px;
+    width: 22px;
+    border: 1px solid #ced4da;
+    border-radius: 50%;
+}
+
+.optionsDiv .cb__container input:checked~.cb__radio {
+    color: #2196F3;
+}
+
+.cb__radio:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.optionsDiv .cb__container input:checked~.cb__radio:after {
+    display: block;
+}
+
+.optionsDiv .cb__container .cb__radio:after {
+    left: 5px;
+    top: 5px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #dc6900;
+}
+
+/* Back btn */
+.back-to-pre-div {
+    text-align: right;
+    line-height: 30px;
+}
+
+.back-to-pre {
+    position: relative;
+    font-size: 1rem;
+    color: #404041;
+    cursor: pointer;
+}
+
+.back-to-pre::before {
+    position: absolute;
+    top: 2px;
+    right: 35px;
+    content: '';
+    width: 1rem;
+    height: 1rem;
+    border-top: 0.15em solid #404041;
+    border-right: 0.15em solid #404041;
+    -moz-transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+}
+
+/* Contacts */
+
+.PCCourseLoginContact .related-content__title {
+    font-size: 1.25rem;
+    line-height: 1.4em;
+    margin: 20px 0 15px;
+    color: #7d7d7d;
+    font-family: Arial, "Microsoft JhengHei", Sans-Serif;
+    font-weight: bold;
+}
+
+.PCCourseLoginContact h4 {
+    font-size: 1.2rem;
+    line-height: 1.5em;
+    margin: 10px 0 10px;
+    color: #000 !important;
+}
+
+.PCCourseLoginContact h5 {
+    font-size: 12px;
+}
+
+.PCCourseLoginContact .btn {
+    background: transparent;
+    border: 1px solid #6d6e71;
+    color: #404041;
+    display: inline-block;
+    padding: 14px 23px;
+    font-size: 12px;
+    line-height: 1.14em;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 0;
+    -webkit-transition: background .2s ease-out;
+    -moz-transition: background .2s ease-out;
+    -o-transition: background .2s ease-out;
+    transition: background .2s ease-out;
+}
+
+.PCCourseLoginContact .btn:hover,
+.PCCourseLoginContact .btn:focus {
+    background: #6d6e71;
+    color: #fff;
+    text-decoration: none;
+    -webkit-transition: background .2s ease-out;
+    -moz-transition: background .2s ease-out;
+    -o-transition: background .2s ease-out;
+    transition: background .2s ease-out;
+}

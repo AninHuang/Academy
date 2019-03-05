@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="../css/pwc-academy-boostrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/member-login.css">
+    <title data-item="title-name">會員資料</title>
+</head>
+
+<body>
+    <header id="menuBarWrapper">
+        <div id="menuBar">
+            <div class="container">
+                <div class="row slim-header__flex-wrapper">
+                    <div id="topBarLeft" class="col-md-6 col-12">
+                        <div id="logoWrapper">
+                            <a href="https://www.pwc.tw/" id="logo">PwC</a> | <a href="https://www.pwc.tw/" class="slim-header__territory-name" data-item="territory-name">臺灣</a>
+                        </div>
+                    </div>
+                    <div id="topBarRight" class="col-md-5 text-right col-12 d-none d-sm-block">
+                        <ul id="lang">
+                            <li><a href="#" class="active" data-item="lang-st" onclick="setLan('zh-TW');">Chinese</a> |</li>
+                            <li><a href="#" data-item="lang-nd" onclick="setLan('en-US');">English</a> |</li>
+                            <li><a href="#" data-item="lang-rd" onclick="setLan('ja-JP');">Japanese</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div id="mobileLangSect" class="col-12 d-block d-sm-none">
+        <ul id="lang">
+            <li><a href="#" class="active" data-item="lang-st" data-lang="zh-TW" onclick="setLan('zh-TW');">Chinese</a> |</li>
+            <li><a href="#" data-item="lang-nd" data-lang="en-US" onclick="setLan('en-US');">English</a> |</li>
+            <li><a href="#" data-item="lang-rd" data-lang="ja-JP" onclick="setLan('ja-JP');">Japanese</a></li>
+        </ul>
+    </div>
+    <div class="title-header">
+        <header class="title-header__text-strip">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2 class="title-header__main-heading" data-item="title-header">會員資料</h2>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </div>
+    <div class="container-fluid sign-up-content">
+        <div class="row justify-content-center">
+            <div class="dpe-component-wrapper pwc-forms" style="max-width: 850px;">
+                <h2 class="h4 form-heading form-heading--alternate">會員基本資料</h2>
+                <div class="pwcFormLongform section">
+                    <div>
+                        <div>
+                            <div>
+                                <div class="formPar parsys">
+                                    <!-- 登入帳號(email) -->
+                                    <div class="textLongform section">
+                                        <div class="pwc-forms__field pwc-forms__field--text form-group" id="email_rightcol">
+                                            <label class="required" for="email_rightcol1">登入帳號(email)</label>
+                                            <input type="text" class="form-control" aria-describedby="email_rightcol1_desc" id="email_rightcol1" name="email" value="" size="35" onkeydown="">
+                                        </div>
+                                    </div>
+                                    <!-- 訂閱人姓名 -->
+                                    <div class="textLongform section">
+                                        <div class="pwc-forms__field pwc-forms__field--text form-group" id="name_rightcol">
+                                            <label class="required" for="name_rightcol1">訂閱人姓名</label>
+                                            <input type="text" class="form-control" aria-describedby="name_rightcol1_desc" id="name_rightcol1" name="name" value="" size="35" onkeydown="">
+                                        </div>
+                                    </div>
+                                    <!-- 手機號碼 -->
+                                    <div class="textLongform section">
+                                        <div class="pwc-forms__field pwc-forms__field--text form-group" id="phone_rightcol">
+                                            <label for="phone_rightcol1">手機號碼</label>
+                                            <input type="text" class="form-control" aria-describedby="phone_rightcol1_desc" id="phone_rightcol1" name="phone" value="" size="35" onkeydown="">
+                                        </div>
+                                    </div>
+                                    <h2 class="h4 form-heading form-heading--alternate" style="margin-top: 40px;">目前任職公司</h2>
+                                    <!-- 行業別 -->
+                                    <div class="textLongform section">
+                                        <div class="pwc-forms__field pwc-forms__field--text form-group" id="industry_rightcol">
+                                            <label class="required" for="industry_rightcol1">行業別</label>
+                                            <input type="text" class="form-control" aria-describedby="industry_rightcol1_desc" id="industry_rightcol1" name="industry" value="" size="35" onkeydown="">
+                                        </div>
+                                    </div>
+                                    <!-- 公司名稱 -->
+                                    <div class="textLongform section">
+                                        <div class="pwc-forms__field pwc-forms__field--text form-group" id="firm_rightcol">
+                                            <label class="required" for="firm_rightcol1">公司名稱</label>
+                                            <input type="text" class="form-control" aria-describedby="firm_rightcol1_desc" id="firm_rightcol1" name="firm" value="" size="35" onkeydown="">
+                                        </div>
+                                    </div>
+                                    <!-- 地區-->
+                                    <div class="textLongform section">
+                                        <div class="pwc-forms__field pwc-forms__field--text form-group" id="region_rightcol">
+                                            <label class="required" for="region_rightcol1">地區</label>
+                                            <input type="text" class="form-control" aria-describedby="region_rightcol1_desc" id="region_rightcol1" name="region" value="" size="35" onkeydown="">
+                                        </div>
+                                    </div>
+                                    <!-- 職務分類-->
+                                    <div class="textLongform section">
+                                        <div class="pwc-forms__field pwc-forms__field--text form-group" id="position_clas_rightcol">
+                                            <label class="required" for="position_clas_rightcol1">職務分類</label>
+                                            <input type="text" class="form-control" aria-describedby="position_clas_rightcol1_desc" id="position_clas_rightcol1" name="position_clas" value="" size="35" onkeydown="">
+                                        </div>
+                                    </div>
+                                    <!-- 職稱-->
+                                    <div class="textLongform section">
+                                        <div class="pwc-forms__field pwc-forms__field--text form-group" id="position_rightcol">
+                                            <label for="position_rightcol1">職稱</label>
+                                            <input type="text" class="form-control" aria-describedby="position_rightcol1_desc" id="position_rightcol1" name="position" value="" size="35" onkeydown="">
+                                        </div>
+                                    </div>
+                                    <!-- 連絡電話-->
+                                    <div class="textLongform section">
+                                        <div class="pwc-forms__field pwc-forms__field--text form-group" id="telephone_rightcol">
+                                            <label for="telephone_rightcol1">連絡電話</label>
+                                            <input type="text" class="form-control" aria-describedby="telephone_rightcol1_desc" id="telephone_rightcol1" name="telephone" value="" size="35" onkeydown="">
+                                        </div>
+                                    </div>
+                                    <!-- 公司email-->
+                                    <div class="textLongform section">
+                                        <div class="pwc-forms__field pwc-forms__field--text form-group" id="firm_email_rightcol">
+                                            <label for="firm_email_rightcol1">公司 email</label>
+                                            <input type="text" class="form-control" aria-describedby="firm_email_rightcol1_desc" id="firm_email_rightcol1" name="firm_email" value="" size="35" onkeydown="">
+                                            <button name="SyncEmail" class="pwc-forms__btn btn__subscr btn" type="button">同上方登入帳號(email)</button>
+                                        </div>
+                                    </div>
+                                    <!-- 統一編號 -->
+                                    <div class="textLongform section">
+                                        <div class="pwc-forms__field pwc-forms__field--text form-group" id="tax_ID_rightcol">
+                                            <label for="tax_ID_rightcol1">統一編號</label>
+                                            <input type="text" class="form-control" aria-describedby="tax_ID_rightcol1_desc" id="tax_ID_rightcol1" name="tax_ID" value="" size="35" onkeydown="">
+                                        </div>
+                                    </div>
+                                    <!-- 訂閱電子報 -->
+                                    <div class="textLongform section">
+                                        <div class="pwc-forms__field pwc-forms__field--text form-group" id="subscr_rightcol">
+                                            <label for="subscr_rightcol1" style="margin-right: 10px;">訂閱電子報</label>
+                                            <div class="subscr_button">
+                                                <button name="Subscribe" class="pwc-forms__btn btn__subscr btn" type="button">全部訂閱</button>
+                                                <button name="Subscribe" class="pwc-forms__btn btn__subscr btn" type="button">部分訂閱</button>
+                                                <button name="Subscribe" class="pwc-forms__btn btn__subscr btn" type="button">不訂閱</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="disclaimerText disclaimerTextLongform parbase">
+                                        <div class="pwc-forms__field form-group">
+                                            <div class="context-block">
+                                                <p>如您無法送出訊息，請下載連結<a href="/PwCTW/Client/Service/Portal/WebUI/Files/JoinMember.xls" class="ExcelLink"> Excel 檔案</a><img src="../img/ExcelButton.png" width="24" height="23">，填寫完後寄至<a href="mailto:subscription.tw@tw.pwc.com?subject=加入資誠會員">subscription.tw@tw.pwc.com</a>，謝謝。</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="disclaimerText disclaimerTextLongform parbase">
+                        <div class="pwc-forms__field form-group">
+                            <div class="context-block">
+                                <p>
+                                    By submitting your email address, you acknowledge that you have read the <a href="https://www.pwc.com/gx/en/legal-notices/our-privacy-commitment/pwc-privacy-statement.html" target="_blank">Privacy Statement</a> and that you consent to our processing data in accordance with the Privacy Statement (including international transfers). If you change your mind at any time about wishing to receive the information from us, you can send us an email message using the <a href="https://www.pwc.com/content/pwc/global/forms/contactUsNew.html?parentPagePath=/content/pwc/gx/en&style=" target="_blank">Contact Us</a> page.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="end section">
+                    <div class="pwc-forms__footer">
+                        <button name="Submit" class="pwc-forms__btn btn btn--primary" type="button">確認送出</button>
+                        <button name="Clear" class="pwc-forms__btn btn btn--primary" type="button">清除資料</button>
+                        <div class="form_row_description"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<!-- <script>
+  var prevScrollpos = window.pageYOffset;
+  window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+  var menuBar = document.getElementById("menuBarWrapper");
+    if (prevScrollpos > currentScrollPos) {
+      menuBar.style.top = "0";
+      menuBar.style.transition = "all 0.3s";
+    } else {
+      menuBar.style.top = "-86px";
+    }
+    prevScrollpos = currentScrollPos;
+  }
+</script> -->
+
+</html>

@@ -1,0 +1,161 @@
+@charset "utf-8";
+
+/* CSS Document */
+html {
+    font-size: 10px;
+    font-size: 0.875em;
+}
+
+h1,h2,h3,h4,h5,h6,
+p,li,pre,em,
+table,th,td,
+strong,span,a {
+    font-family: Georgia, 'Noto Sans TC', 'Microsoft JhengHei', 'Glyphicons Halflings', Meiryo, "MS PGothic", Arial, sans-serif !important;
+    font-style: normal !important;
+}
+
+h1,h2,h3,h4,h5,h6,
+.h1,.h2,.h3,.h4,.h5,.h6 {
+    font-weight: normal;
+    color: inherit;
+}
+
+.ms-rtefield,
+.ms-formbody {
+    width: 1170px;
+}
+
+/* CourseDetail */
+.text-component {
+    float: left;
+}
+
+.text-component>p {
+    line-height: 1.7em !important;
+    margin: 0;
+    padding: 0 0 1.5em;
+    font-size: 1.142rem;
+    vertical-align: baseline;
+    letter-spacing: .004em;
+}
+
+/* CourseBrief */
+.text-component ul {
+    display: block;
+    padding-left: 30px;
+    list-style: disc;
+    margin-bottom: 10px;
+}
+
+.text-component ul li,
+.text-component ol li {
+    line-height: 1.5em;
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+/* CourseAgenda */
+.CourseAgenda {
+    width: 100%;
+}
+
+.CourseAgenda,
+.CourseAgenda th,
+.CourseAgenda td {
+    border: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #404041;
+}
+
+table {
+    background-color: transparent;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+table,
+td,
+th {
+    font-size: 16px !important;
+    line-height: 28px !important;
+    padding: 15px 10px;
+    vertical-align: top;
+}
+
+table td>p,
+table th>p {
+    margin: 0 0 10px 0;
+}
+
+table td>p:only-child,
+table td>p:last-child,
+table th>p:only-child,
+table th>p:last-child {
+    margin: 0;
+}
+
+table p {
+    font-size: 1.142rem;
+    line-height: 1.5em;
+}
+
+.CourseAgenda th p {
+    font-size: 1.286rem;
+    font-weight: bold;
+}
+
+.CourseAgenda thead>tr>th,
+.CourseAgenda tbody>tr>th {
+    font-weight: bold;
+    padding: 15px 10px;
+    text-align: left;
+}
+
+.CourseAgenda thead>tr>th,
+.CourseAgenda tbody>tr:first-of-type>th {
+    border-bottom: 2px solid #ccc;
+}
+
+.CourseAgenda tbody>tr:nth-of-type(even) {
+    background-color: #f2f2f2;
+}
+
+.CourseAgenda td {
+    border-bottom: 1px solid #ccc;
+}
+
+/* Contacts */
+h4 {
+    font-size: 24px;
+    font-size: 1.716rem;
+    line-height: 1.5em;
+    margin: 10px 0 10px;
+    color: #000 !important;
+}
+
+.btn {
+    background: transparent;
+    border: 1px solid #6d6e71;
+    color: #404041;
+    display: inline-block;
+    padding: 14px 23px;
+    font-size: 1rem;
+    line-height: 1.14em;
+    font-weight: bold;
+    text-decoration: none;
+    -webkit-transition: background .2s ease-out;
+    -moz-transition: background .2s ease-out;
+    -o-transition: background .2s ease-out;
+    transition: background .2s ease-out;
+}
+
+.btn:hover,
+.btn:focus {
+    background: #6d6e71;
+    color: #fff;
+    text-decoration: none;
+    -webkit-transition: background .2s ease-out;
+    -moz-transition: background .2s ease-out;
+    -o-transition: background .2s ease-out;
+    transition: background .2s ease-out;
+}
